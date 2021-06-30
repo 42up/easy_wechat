@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["42up"]
   spec.email         = ["foobar@v2up.com"]
 
-  spec.summary       = "easy wechat sdk"
-  spec.description   = "easy wechat sdk"
+  spec.summary       = "An unofficial easy wechat sdk"
+  spec.description   = "An unofficial easy wechat sdk"
   spec.homepage      = "https://github.com/42up/easy_wechat"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
