@@ -27,6 +27,14 @@ EasyWechat.configure do |config|
   config.appid = ENV.fetch("APPID") || ""
   config.app_secret = ENV.fetch("APP_SECRET") || ""
 end
+
+client = EasyWechat::Client.new
+client.token
+client.batchget_material
+client.uploadimg(media)
+client.add_news(articles)
+client.get_user_summary(begin_date, end_date)
+client.get_user_cumulate(begin_date, end_date)
 ```
 
 ## Development

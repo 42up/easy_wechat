@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "httpx"
   spec.add_dependency "activesupport"
+  spec.add_dependency "http-form_data"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
