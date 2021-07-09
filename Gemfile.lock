@@ -3,6 +3,7 @@ PATH
   specs:
     easy_wechat (0.1.1)
       activesupport
+      http-form_data
       httpx
 
 GEM
@@ -18,7 +19,8 @@ GEM
     concurrent-ruby (1.1.9)
     diff-lcs (1.4.4)
     http-2-next (0.4.3)
-    httpx (0.15.1)
+    http-form_data (2.3.0)
+    httpx (0.15.3)
       http-2-next (>= 0.4.1)
       timers
     i18n (1.8.10)
