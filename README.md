@@ -37,6 +37,11 @@ client.get_user_summary(begin_date, end_date)
 client.get_user_cumulate(begin_date, end_date)
 ```
 
+## FAQ
+1. 微信api，请求方式有问题，也会报错，所以要注意请求方式
+2. 先搞清楚你的appid对应的公众号是什么，并且搞清楚你是什么类型的，查看接口权限是否获得，否则有可能会有类似48001的权限未开通错误
+3. 调用api之前，请确保ip已经加入到服务器白名单
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
