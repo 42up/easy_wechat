@@ -23,6 +23,8 @@ Or install it yourself as:
 ## Usage
 
 ```
+rails g easy_wechat:install
+
 EasyWechat.configure do |config|
   config.appid = ENV.fetch("APPID") || ""
   config.app_secret = ENV.fetch("APP_SECRET") || ""
