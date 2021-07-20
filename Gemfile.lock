@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    easy_wechat (0.1.5)
+    easy_wechat (0.1.6)
       activesupport
       http-form_data
       httpx
