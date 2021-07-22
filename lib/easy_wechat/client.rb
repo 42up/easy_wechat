@@ -92,7 +92,7 @@ module EasyWechat
     # https://developers.weixin.qq.com/doc/offiaccount/Asset_Management/Adding_Permanent_Assets.html
     def uploadimg(media)
       # https://honeyryderchuck.gitlab.io/httpx/wiki/Multipart-Uploads.html#notes
-      file = media.is_a?(String) ? HTTP::FormData::File.new(media) : meida
+      file = media.is_a?(String) ? HTTP::FormData::File.new(media) : media.path
       resp = HTTPX.plugin(:multipart).post(UPLOADIMG_URL, params: { access_token: access_token }, form: { media: file })
 
       r = ::JSON.parse(resp.body, quirks_mode: true)
